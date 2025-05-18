@@ -5,8 +5,8 @@ let editandoIndicador = null;
 
 let chartEval1, chartEval2, chartEval3;
 
-const urlCSVEvaluaciones = "https://raw.githubusercontent.com/Juanchirobot/fraudes-riesgos/evaluaciones_historico.csv";
-const urlCSVIndicadores = "https://raw.githubusercontent.com/Juanchirobot/fraudes-riesgos/indicadores_operativos.csv";
+const urlCSVEvaluaciones = "https://raw.githubusercontent.com/Juanchirobot/fraudes-riesgos/main/evaluaciones_historico.csv";
+const urlCSVIndicadores = "https://raw.githubusercontent.com/Juanchirobot/fraudes-riesgos/main/indicadores_operativos.csv";
 
 let submoduloActivo = "evaluaciones";
 

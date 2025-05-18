@@ -3,76 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Inicio - Prevención Institucional</title>
-  <link rel="stylesheet" href="shared/style-global.css" />
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f1f5f9;
-      color: #0f172a;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      min-height: 100vh;
-      padding: 60px 20px 40px;
-    }
-
-    h1 {
-      font-size: 28px;
-      margin-bottom: 40px;
-      font-weight: 700;
-    }
-
-    .menu-opciones {
-      display: flex;
-      gap: 30px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .opcion {
-      background-color: white;
-      border: 1px solid #cbd5e1;
-      border-radius: 14px;
-      padding: 30px 40px;
-      text-align: center;
-      text-decoration: none;
-      color: #0f172a;
-      font-size: 18px;
-      font-weight: 600;
-      width: 240px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.04);
-      transition: all 0.2s ease;
-    }
-
-    .opcion:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-      background-color: #f8fafc;
-    }
-
-    .emoji {
-      font-size: 42px;
-      display: block;
-      margin-bottom: 12px;
-    }
-  </style>
+  <title>Portal Institucional</title>
+  <link rel="stylesheet" href="style_menu.css" />
 </head>
 <body>
-  <h1>Prevención Institucional</h1>
+  <div class="background-overlay"></div>
 
-  <div class="menu-opciones">
-    <a href="fraudes/menu-fraudes.html" class="opcion">
-      <span class="emoji">🛡️</span>
-      Módulo Fraudes
-    </a>
+  <header class="menu-header">
+    <h1>Portal Institucional</h1>
+    <p>Acceso centralizado a los módulos de prevención de fraudes, riesgos operativos y de tecnología</p>
+  </header>
 
-    <a href="riesgos/index.html" class="opcion">
-      <span class="emoji">📊</span>
-      Módulo Riesgos
-    </a>
-  </div>
+  <main class="menu-container">
+    <div class="menu-grid">
+      <a href="fraudes/menu-fraudes.html" class="menu-box">
+        <span>🛡️</span>
+        <strong>Prevención de Fraudes</strong>
+      </a>
+      <a href="riesgos/menu-riesgos.html" class="menu-box">
+        <span>📊</span>
+        <strong>Riesgos Operativos</strong>
+      </a>
+      <a href="tecnologia/menu-tecnologia.html" class="menu-box">
+        <span>💻</span>
+        <strong>Riesgos Tecnológicos</strong>
+      </a>
+      <div class="menu-box disabled">
+        <span>📂</span>
+        <strong>Consultas</strong>
+      </div>
+    </div>
+  </main>
 </body>
 </html>

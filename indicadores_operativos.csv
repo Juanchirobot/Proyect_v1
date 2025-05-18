@@ -1,0 +1,73 @@
+ID,Sector,IndicadorPorcentaje,Fecha,Responsable,Observaciones
+1,Riesgo de Crédito,88,2024-11-30,Ana Martínez,Desvío alto vs. promedio
+2,Riesgo Operativo,70,2024-11-30,Carlos Torres,Evaluación incompleta
+3,Legal y Cumplimiento,76,2024-11-30,Lucía Gómez,Cumple meta establecida
+4,Canales Digitales,64,2024-11-30,Marcos Rivas,Requiere validación adicional
+5,Experiencia Cliente,66,2024-11-30,Juliana Paz,Análisis en curso
+6,RRHH,49,2024-11-30,Gonzalo Viera,Análisis en curso
+7,Tecnología,71,2024-11-30,Iván Silva,Requiere validación adicional
+8,Ciberseguridad,93,2024-11-30,Natalia Funes,Evaluación incompleta
+9,Fraudes,48,2024-11-30,Martín Godoy,Cumple meta establecida
+10,Compliance,62,2024-11-30,Romina Díaz,Cumple meta establecida
+11,Auditoría Interna,59,2024-11-30,Leonardo Ferreyra,Análisis en curso
+12,Operaciones,49,2024-11-30,Claudia Núñez,Evaluación incompleta
+13,Riesgo de Crédito,58,2024-12-31,Ana Martínez,Evaluación incompleta
+14,Riesgo Operativo,74,2024-12-31,Carlos Torres,Análisis en curso
+15,Legal y Cumplimiento,81,2024-12-31,Lucía Gómez,Requiere validación adicional
+16,Canales Digitales,56,2024-12-31,Marcos Rivas,Sin cambios desde última revisión
+17,Experiencia Cliente,58,2024-12-31,Juliana Paz,Desvío alto vs. promedio
+18,RRHH,45,2024-12-31,Gonzalo Viera,Análisis en curso
+19,Tecnología,75,2024-12-31,Iván Silva,Pendiente revisión comité
+20,Ciberseguridad,73,2024-12-31,Natalia Funes,Cumple meta establecida
+21,Fraudes,47,2024-12-31,Martín Godoy,Sin cambios desde última revisión
+22,Compliance,81,2024-12-31,Romina Díaz,Por encima de lo esperado
+23,Auditoría Interna,94,2024-12-31,Leonardo Ferreyra,Sin cambios desde última revisión
+24,Operaciones,55,2024-12-31,Claudia Núñez,Por encima de lo esperado
+25,Riesgo de Crédito,65,2025-01-31,Ana Martínez,Evaluación incompleta
+26,Riesgo Operativo,86,2025-01-31,Carlos Torres,Pendiente revisión comité
+27,Legal y Cumplimiento,50,2025-01-31,Lucía Gómez,Análisis en curso
+28,Canales Digitales,83,2025-01-31,Marcos Rivas,Pendiente revisión comité
+29,Experiencia Cliente,84,2025-01-31,Juliana Paz,Pendiente revisión comité
+30,RRHH,73,2025-01-31,Gonzalo Viera,Sin cambios desde última revisión
+31,Tecnología,77,2025-01-31,Iván Silva,Pendiente revisión comité
+32,Ciberseguridad,68,2025-01-31,Natalia Funes,Evaluación incompleta
+33,Fraudes,54,2025-01-31,Martín Godoy,Análisis en curso
+34,Compliance,76,2025-01-31,Romina Díaz,Sin cambios desde última revisión
+35,Auditoría Interna,80,2025-01-31,Leonardo Ferreyra,Pendiente revisión comité
+36,Operaciones,75,2025-01-31,Claudia Núñez,Requiere validación adicional
+37,Riesgo de Crédito,88,2025-02-28,Ana Martínez,Pendiente revisión comité
+38,Riesgo Operativo,56,2025-02-28,Carlos Torres,Por encima de lo esperado
+39,Legal y Cumplimiento,49,2025-02-28,Lucía Gómez,Análisis en curso
+40,Canales Digitales,87,2025-02-28,Marcos Rivas,Cumple meta establecida
+41,Experiencia Cliente,84,2025-02-28,Juliana Paz,Por encima de lo esperado
+42,RRHH,55,2025-02-28,Gonzalo Viera,Requiere validación adicional
+43,Tecnología,62,2025-02-28,Iván Silva,Análisis en curso
+44,Ciberseguridad,73,2025-02-28,Natalia Funes,Evaluación incompleta
+45,Fraudes,55,2025-02-28,Martín Godoy,Por encima de lo esperado
+46,Compliance,88,2025-02-28,Romina Díaz,Sin cambios desde última revisión
+47,Auditoría Interna,95,2025-02-28,Leonardo Ferreyra,Pendiente revisión comité
+48,Operaciones,54,2025-02-28,Claudia Núñez,Desvío alto vs. promedio
+49,Riesgo de Crédito,85,2025-03-31,Ana Martínez,Desvío alto vs. promedio
+50,Riesgo Operativo,84,2025-03-31,Carlos Torres,Por encima de lo esperado
+51,Legal y Cumplimiento,86,2025-03-31,Lucía Gómez,Sin cambios desde última revisión
+52,Canales Digitales,85,2025-03-31,Marcos Rivas,Desvío alto vs. promedio
+53,Experiencia Cliente,63,2025-03-31,Juliana Paz,Evaluación incompleta
+54,RRHH,54,2025-03-31,Gonzalo Viera,Requiere validación adicional
+55,Tecnología,71,2025-03-31,Iván Silva,Cumple meta establecida
+56,Ciberseguridad,54,2025-03-31,Natalia Funes,Evaluación incompleta
+57,Fraudes,59,2025-03-31,Martín Godoy,Sin cambios desde última revisión
+58,Compliance,89,2025-03-31,Romina Díaz,Cumple meta establecida
+59,Auditoría Interna,69,2025-03-31,Leonardo Ferreyra,Análisis en curso
+60,Operaciones,73,2025-03-31,Claudia Núñez,Desvío alto vs. promedio
+61,Riesgo de Crédito,55,2025-04-30,Ana Martínez,Análisis en curso
+62,Riesgo Operativo,60,2025-04-30,Carlos Torres,Desvío alto vs. promedio
+63,Legal y Cumplimiento,50,2025-04-30,Lucía Gómez,Evaluación incompleta
+64,Canales Digitales,56,2025-04-30,Marcos Rivas,Sin cambios desde última revisión
+65,Experiencia Cliente,69,2025-04-30,Juliana Paz,Pendiente revisión comité
+66,RRHH,66,2025-04-30,Gonzalo Viera,Desvío alto vs. promedio
+67,Tecnología,46,2025-04-30,Iván Silva,Desvío alto vs. promedio
+68,Ciberseguridad,46,2025-04-30,Natalia Funes,Por encima de lo esperado
+69,Fraudes,50,2025-04-30,Martín Godoy,Desvío alto vs. promedio
+70,Compliance,54,2025-04-30,Romina Díaz,Por encima de lo esperado
+71,Auditoría Interna,93,2025-04-30,Leonardo Ferreyra,Evaluación incompleta
+72,Operaciones,88,2025-04-30,Claudia Núñez,Análisis en curso

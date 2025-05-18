@@ -1,0 +1,6 @@
+fecha,componente_afectado,componente_dependiente,impacto,descripcion
+2024-04-20,Middleware,API Core,Latencia Alta,Middleware depende de Core para login.
+2024-04-22,Front-End Web,Middleware,Interfaz Inestable,El Front depende de Middleware para servicios de usuario.
+2024-04-23,Mobile App,API Usuarios,Error de Autenticación,La app requiere autenticación vía API Usuarios.
+2024-04-25,Motor ETL,DataLake,Carga Fallida,El proceso ETL requiere DataLake para consolidación.
+2024-04-28,Canal Web,Login Middleware,Error 500,El canal web lanza error cuando falla el login central.

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Panel de Control - Fraudes - Riesgos</title>
+  <link rel="stylesheet" href="style_mfraudes.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script defer src="script_mfraudes.js"></script>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar" onmouseenter="expandSidebar()" onmouseleave="collapseSidebar()">
+    <div class="sidebar-logo" onclick="mostrarTabla()">🛡️</div>
+    <div class="sidebar-title" onclick="mostrarTabla()">Prevención de Fraudes</div>
+
+    <div class="nav-wrap">
+      <div class="nav-item" onclick="toggleSubmenu('submenu-casos'); mostrarTabla();">
+        <span class="icon">🗂️</span>
+        <span class="nav-label">Casos</span>
+      </div>
+      <div class="submenu" id="submenu-casos">
+        <button onclick="mostrarFormulario()">📝 Formulario de Carga</button>
+      </div>
+
+      <div class="nav-item" onclick="mostrarDashboard()">
+        <span class="icon">📈</span>
+        <span class="nav-label">Estadísticas</span>
+      </div>
+
+      <div class="nav-item" onclick="descargarCSV()">
+        <span class="icon">💾</span>
+        <span class="nav-label">Descargar Casos</span>
+      </div>
+
+      <div class="nav-item" onclick="descargarCSVTransacciones()">
+        <span class="icon">🧷</span>
+        <span class="nav-label">Transacciones</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contenido principal -->
+  <div class="main-content">
+    <!-- Buscador por CUIL -->
+    <div class="busqueda-container" id="busqueda-container">
+      <input type="text" id="busqueda" placeholder="Buscar por CUIL Cliente..." />
+      <button class="btn-buscar" onclick="ejecutarBusqueda()" title="Buscar">🔍</button>
+    </div>
+
+    <!-- Tabla de casos -->
+    <div class="tabla-casos" id="tablaCasos">
+      <h2>📋 Tabla de Casos</h2>
+      <div class="tabla-scroll">
+        <table id="tabla">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Usuario</th>
+              <th>CUIL Cliente</th>
+              <th>Fecha</th>
+              <th>Caso</th>
+              <th>Descripción</th>
+              <th>Estado</th>
+              <th>Prioridad</th>
+              <th>Tipo de Riesgo</th>
+              <th>Canal de Detección</th>
+              <th>Monto Sospechoso (ARS)</th>
+              <th>Observaciones</th>
+              <th>Editar</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <!-- Formulario embebido -->
+    <section class="formulario-section" id="formulario-section" style="display: none;">
+      <h2>📝 Formulario de Carga</h2>
+      <form id="formulario">
+        <!-- Bloque: Usuario -->
+        <fieldset class="form-bloque">
+          <legend>Datos del Usuario</legend>
+          <div class="form-grid">
+            <div class="form-group"><label>Usuario</label><input type="text" id="usuario" required /></div>
+            <div class="form-group"><label>Fecha</label><input type="date" id="fecha" required /></div>
+            <div class="form-group"><label>Caso</label><input type="text" id="caso" readonly /></div>
+          </div>
+        </fieldset>
+
+        <!-- Bloque: Datos del Caso -->
+        <fieldset class="form-bloque">
+          <legend>Datos del Caso</legend>
+          <div class="form-grid">
+            <div class="form-group"><label>Descripción</label><textarea id="descripcion"></textarea></div>
+            <div class="form-group"><label>Estado</label><input type="text" id="estado" required /></div>
+            <div class="form-group"><label>Prioridad</label><input type="text" id="prioridad" required /></div>
+            <div class="form-group"><label>Tipo de Riesgo</label><input type="text" id="tipo_riesgo" required /></div>
+            <div class="form-group"><label>Canal de Detección</label><input type="text" id="canal_deteccion" required /></div>
+            <div class="form-group"><label>Observaciones</label><textarea id="observaciones"></textarea></div>
+          </div>
+        </fieldset>
+
+        <!-- Bloque: Transacciones -->
+        <fieldset class="form-bloque">
+          <legend>Transacciones Relacionadas</legend>
+          <div id="transacciones-container">
+            <table id="tablaTransacciones">
+              <thead>
+                <tr>
+                  <th>CUIL Cliente</th>
+                  <th>Fecha</th>
+                  <th>CBU Origen</th>
+                  <th>CBU Destino</th>
+                  <th>Monto</th>
+                  <th>Moneda</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+            <button type="button" class="btn secundario" onclick="agregarTransaccion()">➕ Agregar Transacción</button>
+          </div>
+        </fieldset>
+
+        <div style="text-align:right; margin-top: 20px;">
+          <button type="submit" class="btn">✅ Guardar Caso</button>
+        </div>
+      </form>
+
+      <div class="extras-form">
+        <button class="btn">🔒 Bloqueo Canal</button>
+        <button class="btn" onclick="abrirModalBloqueo()">🚫 Bloqueo Cuenta</button>
+      </div>
+    </section>
+
+    <!-- Dashboard -->
+    <section class="dashboard" id="dashboard" style="display: none;">
+      <h2>📊 Dashboard de Casos</h2>
+
+      <!-- Filtros -->
+      <div class="dashboard-filtros">
+        <select id="filtroAnio" onchange="filtrarPorAnio()">
+          <option value="">Año completo</option>
+        </select>
+        <select id="filtroMes" onchange="filtrarPorMes()">
+          <option value="">Todos los meses</option>
+        </select>
+      </div>
+
+      <!-- Totales -->
+      <div class="totales-dashboard">
+        <div><strong>Casos Totales:</strong> <span id="totalCasos">0</span> <span id="variacionCasos"></span></div>
+        <div><strong>Monto Total:</strong> $<span id="totalMontos">0</span> <span id="variacionMonto"></span></div>
+
+      </div>
+
+      <!-- Gráficos (canvas) -->
+      <div class="grafico-container"><canvas id="graficoEvolutivo"></canvas></div>
+      <div class="grafico-container"><h4>Canal de Detección (Cantidad)</h4><canvas id="graficoCanalCantidad"></canvas></div>
+      <div class="grafico-container"><h4>Canal de Detección (Montos)</h4><canvas id="graficoCanalMonto"></canvas></div>
+      <div class="grafico-container"><h4>Distribución % Tipo de Riesgo (por mes)</h4><canvas id="graficoPorcentajeTipoRiesgo"></canvas></div>
+    </section>
+  
+  <!-- Overlay -->
+  <div id="overlay" onclick="cerrarModales()"></div>
+
+  <!-- Modal Bloqueo Cuenta -->
+  <div id="modalBloqueoCuenta" class="modal-api">
+    <span class="close" onclick="cerrarModalBloqueo()">×</span>
+    <h3>🚫 Bloquear Cuenta del Cliente</h3>
+    <form id="formBloqueoCuenta">
+      <label for="cbuCuenta">CBU de Cuenta a Bloquear:</label>
+      <input type="text" id="cbuCuenta" name="cbuCuenta" required />
+      <div style="text-align:right; margin-top: 20px;">
+        <button type="submit" class="btn">🚫 Confirmar Bloqueo</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

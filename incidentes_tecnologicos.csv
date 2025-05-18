@@ -1,0 +1,9 @@
+fecha,sistema,tipo,severidad,descripcion,responsable,estado
+2023-12-14,Core Bancario,Error de Integración,Alta,No se logró conectar con el API de canales.,msuarez,Resuelto
+2024-01-23,Home Banking,Caída Intermitente,Media,El acceso móvil mostró intermitencias por 45 minutos.,ljimenez,En análisis
+2024-03-10,Canal Mobile,Falla de Login,Alta,Usuarios no pueden iniciar sesión desde iOS.,mnavarro,Escalado
+2024-05-01,Middleware,Desincronización,Baja,Diferencias en la hora del servidor causaron errores de validación.,drodriguez,Resuelto
+2024-05-05,DataLake,Timeout ETL,Media,Los procesos ETL no concluyeron en el tiempo previsto.,afernandez,En revisión
+2024-05-11,Core Bancario,Error en Cierre de Lote,Alta,Transacciones no procesadas por error en cierre diario.,msuarez,Resuelto
+2024-05-16,Canal Web,Redirección Incorrecta,Media,Usuarios son redirigidos a página de error tras login.,ljimenez,En análisis
+2024-05-17,Middleware,Exceso de Memoria,Baja,El consumo de memoria superó el 90% por 10 min.,drodriguez,Mitigado

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tecnología - Incidentes y Dependencias</title>
+  <link rel="stylesheet" href="style_mtecnologia.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script defer src="script_mtecnologia.js"></script>
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar" onmouseenter="expandirSidebar()" onmouseleave="contraerSidebar()">
+    <div class="sidebar-header" onclick="mostrarVista('tabla-incidentes')">
+      <div class="icono-principal">💻</div>
+      <div class="titulo-modulo">Tecnología</div>
+    </div>
+
+    <div class="menu-lateral">
+      <div class="boton-menu" onclick="toggleSubmenu('submenu-incidentes')">
+        <span>🛠️</span><span class="texto-boton">Incidentes</span>
+      </div>
+      <div class="submenu" id="submenu-incidentes">
+        <button onclick="mostrarVista('tabla-incidentes')">📋 Ver Incidentes</button>
+        <button onclick="mostrarVista('formulario-incidentes')">📝 Cargar Incidente</button>
+      </div>
+
+      <div class="boton-menu" onclick="toggleSubmenu('submenu-dependencias')">
+        <span>🧬</span><span class="texto-boton">Árbol Dependencias</span>
+      </div>
+      <div class="submenu" id="submenu-dependencias">
+        <button onclick="mostrarVista('tabla-dependencias')">📄 Ver Dependencias</button>
+        <button onclick="mostrarVista('formulario-dependencias')">➕ Nueva Dependencia</button>
+      </div>
+
+      <div class="boton-menu" onclick="mostrarVista('dashboard')">
+        <span>📊</span><span class="texto-boton">Dashboard</span>
+      </div>
+
+      <div class="boton-menu" onclick="descargarCSV()">
+        <span>💾</span><span class="texto-boton">Descargar CSV</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Contenido principal -->
+  <main class="contenido-principal">
+    <!-- Buscador -->
+    <div class="contenedor-busqueda" id="contenedor-busqueda">
+      <input type="text" id="input-busqueda" placeholder="Buscar en incidentes..." />
+      <button onclick="buscar()">🔍</button>
+    </div>
+
+    <!-- Tabla Incidentes -->
+    <section id="tabla-incidentes" class="seccion">
+      <h2>📋 Incidentes Tecnológicos</h2>
+      <div class="contenedor-tabla">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Fecha</th>
+              <th>Sistema</th>
+              <th>Tipo</th>
+              <th>Severidad</th>
+              <th>Descripción</th>
+              <th>Responsable</th>
+              <th>Estado</th>
+              <th>Editar</th>
+            </tr>
+          </thead>
+          <tbody id="tbody-incidentes"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Formulario Incidentes -->
+    <section id="formulario-incidentes" class="seccion" style="display: none;">
+      <h2>📝 Formulario de Incidentes</h2>
+      <form id="form-incidentes" class="form-grid">
+        <input type="date" id="fecha" placeholder="Fecha" required />
+        <input type="text" id="sistema" placeholder="Sistema" required />
+        <input type="text" id="tipo" placeholder="Tipo" required />
+        <input type="text" id="severidad" placeholder="Severidad" required />
+        <textarea id="descripcion" placeholder="Descripción" required></textarea>
+        <input type="text" id="responsable" placeholder="Responsable" required />
+        <input type="text" id="estado" placeholder="Estado" required />
+        <button type="submit" class="btn">✅ Guardar Incidente</button>
+      </form>
+    </section>
+
+    <!-- Tabla Árbol de Dependencias -->
+    <section id="tabla-dependencias" class="seccion" style="display: none;">
+    <div class="contenedor-busqueda">
+      <input type="text" id="input-busqueda-dep" placeholder="Buscar por componente, dependencia o impacto..." />
+       <button onclick="buscarDependencias()">🔍</button>
+    </div>
+      <h2>🧬 Árbol de Dependencias</h2>
+      <div class="contenedor-tabla">
+        <table>
+          <thead>
+            <tr>
+              <th>Fecha</th>
+              <th>Componente Afectado</th>
+              <th>Componente Dependiente</th>
+              <th>Impacto</th>
+              <th>Descripción</th>
+              <th>Editar</th>
+            </tr>
+          </thead>
+          <tbody id="tbody-dependencias"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Formulario Árbol de Dependencias -->
+    <section id="formulario-dependencias" class="seccion" style="display: none;">
+      <h2>➕ Nueva Dependencia</h2>
+      <form id="form-dependencias" class="form-grid">
+        <input type="date" id="dep_fecha" required />
+        <input type="text" id="comp_af" placeholder="Componente Afectado" required />
+        <input type="text" id="comp_dep" placeholder="Componente Dependiente" required />
+        <input type="text" id="impacto" placeholder="Impacto" required />
+        <textarea id="dep_descripcion" placeholder="Descripción" required></textarea>
+        <button type="submit" class="btn">✅ Guardar Dependencia</button>
+      </form>
+    </section>
+
+    <!-- Dashboard -->
+    <section id="dashboard" class="seccion" style="display: none;">
+      <h2>📊 Dashboard Tecnología</h2>
+      <div class="dashboard-filtros">
+        <select id="filtroCategoria" onchange="filtrarDashboardCategoria()">
+          <option value="incidentes">Incidentes</option>
+          <option value="dependencias">Árbol de Dependencias</option>
+        </select>
+        <select id="filtroAnio" onchange="filtrarDashboard()">
+          <option value="">Año completo</option>
+        </select>
+        <select id="filtroMes" onchange="filtrarDashboard()">
+          <option value="">Todos los meses</option>
+        </select>
+      </div>
+      <div id="totales-dashboard" class="totales-dashboard"></div>
+      <div class="fila-dashboard">
+        <div class="grafico"><canvas id="graficoEvolucion"></canvas></div>
+      </div>
+      <div class="fila-dashboard">
+        <div class="grafico"><canvas id="graficoSistema"></canvas></div>
+        <div class="grafico"><canvas id="graficoSeveridad"></canvas></div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

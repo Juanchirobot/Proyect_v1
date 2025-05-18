@@ -1,0 +1,151 @@
+ID,Usuario,CUIL_Cliente,Fecha,Caso,Descripción,Estado,Prioridad,Tipo de Riesgo,Canal de Detección,Monto Sospechoso (ARS),Observaciones
+1,analista2,76305145446,2023-12-24,CASO-00001,Occaecati error id magnam.,En revisión,Media,Dispositivo Nuevo,Correo Electrónico,318861,Sed modi voluptatum eos.
+2,analista3,41594505861,2023-12-11,CASO-00002,Velit provident qui sit vitae.,En revisión,Media,Dispositivo Nuevo,App Móvil,493509,Quia ex libero ipsum.
+3,analista3,65412523794,2023-12-22,CASO-00003,Ab necessitatibus omnis blanditiis minima.,Pendiente,Media,Dispositivo Nuevo,Web Corporativa,106646,Ullam itaque cupiditate quia.
+4,analista2,48701238215,2023-12-15,CASO-00004,Facere reprehenderit ratione perferendis accusantium corporis.,Finalizado,Baja,Dispositivo Nuevo,App Móvil,232869,Est error sunt nam.
+5,analista1,82930500746,2023-12-05,CASO-00005,Quisquam nobis temporibus iusto illum ducimus.,En revisión,Alta,Ingeniería Social,Web Corporativa,304107,Animi accusamus alias.
+6,analista3,01690574343,2023-12-28,CASO-00006,Numquam cupiditate ducimus sed molestiae.,En revisión,Baja,Transaccional,App Móvil,365564,Illum vitae eum repellendus.
+7,analista2,33976614321,2023-12-08,CASO-00007,Culpa eius adipisci.,Pendiente,Media,Acceso Ilegítimo,Correo Electrónico,307089,Dolore id ullam aut et.
+8,analista3,51518951940,2023-12-24,CASO-00008,Iure velit iusto quos sunt fugit.,Pendiente,Alta,Acceso Ilegítimo,Banca Web,442785,Cum delectus consequatur.
+9,analista1,89175648518,2023-12-21,CASO-00009,Repellat ducimus ex animi placeat.,Pendiente,Baja,Ingeniería Social,Correo Electrónico,310024,Modi error dolorum at id id.
+10,analista2,08300361199,2023-12-19,CASO-00010,Sed odio cum distinctio.,En revisión,Media,Dispositivo Nuevo,Banca Web,444784,Officia aspernatur ipsa.
+11,analista3,75644383706,2023-12-15,CASO-00011,Suscipit a minus maxime illo tenetur.,En revisión,Baja,Transaccional,Web Corporativa,118437,Officia esse ex.
+12,analista2,40872933840,2023-12-02,CASO-00012,Dolore minus quam.,En revisión,Media,Ingeniería Social,Correo Electrónico,152092,Enim ullam fugit quaerat.
+13,analista1,81022487521,2023-12-11,CASO-00013,Ipsa vitae aspernatur.,Pendiente,Media,Acceso Ilegítimo,Web Corporativa,376043,Tempora autem ipsam.
+14,analista1,06603911466,2023-12-09,CASO-00014,Aut officia dignissimos a.,Finalizado,Baja,Acceso Ilegítimo,Banca Web,376678,Culpa debitis nihil ex.
+15,analista1,90105775024,2023-12-23,CASO-00015,Voluptatem sint veniam corrupti tempore architecto.,Finalizado,Alta,Transaccional,Web Corporativa,187834,Molestiae illum debitis quae.
+16,analista3,53834867475,2023-12-21,CASO-00016,Occaecati porro modi.,Pendiente,Media,Dispositivo Nuevo,Web Corporativa,364568,Quas aut dolorum.
+17,analista3,92466034752,2023-12-04,CASO-00017,Ratione delectus earum neque omnis.,Finalizado,Media,Transaccional,App Móvil,498099,Molestiae debitis occaecati.
+18,analista3,92922512618,2023-12-22,CASO-00018,Ipsa sapiente aut.,Finalizado,Alta,Transaccional,Web Corporativa,449379,Qui veniam aut dicta.
+19,analista3,66619854977,2023-12-02,CASO-00019,Velit aspernatur nihil ipsum quia.,En revisión,Baja,Transaccional,Correo Electrónico,215361,Corrupti adipisci commodi.
+20,analista3,36133221559,2023-12-10,CASO-00020,Itaque exercitationem est laudantium.,Finalizado,Media,Acceso Ilegítimo,App Móvil,97721,Iure aut expedita.
+21,analista3,93347563138,2023-12-21,CASO-00021,Debitis architecto perspiciatis veritatis vel.,En revisión,Media,Dispositivo Nuevo,Correo Electrónico,265335,Maxime hic autem molestiae.
+22,analista2,81521679716,2023-12-07,CASO-00022,Labore provident aut quia corrupti.,Pendiente,Media,Acceso Ilegítimo,Banca Web,78579,Illum repellat quas beatae.
+23,analista3,48783942112,2023-12-15,CASO-00023,Fuga sunt beatae.,En revisión,Baja,Ingeniería Social,Banca Web,389591,Dolor aperiam ut soluta.
+24,analista2,61883330860,2023-12-24,CASO-00024,Mollitia saepe quia sed sed optio.,Pendiente,Media,Transaccional,Correo Electrónico,280899,Earum enim est provident.
+25,analista3,39183414769,2023-12-25,CASO-00025,Similique officiis occaecati aliquam.,En revisión,Baja,Transaccional,Banca Web,146784,Voluptas modi illum facilis.
+26,analista1,23794849396,2024-01-26,CASO-00026,Magnam dolorum repellat.,Pendiente,Baja,Dispositivo Nuevo,App Móvil,446990,Dicta deserunt id nisi alias.
+27,analista2,69963307434,2024-01-03,CASO-00027,Perspiciatis numquam officiis temporibus.,En revisión,Baja,Ingeniería Social,Web Corporativa,285879,Magnam assumenda quod vero.
+28,analista3,66729099416,2024-01-24,CASO-00028,Quaerat id quas esse assumenda.,Finalizado,Alta,Ingeniería Social,Correo Electrónico,113881,A possimus repellat sit.
+29,analista1,27353662731,2024-01-23,CASO-00029,Ullam error ipsam.,En revisión,Baja,Ingeniería Social,Web Corporativa,156994,Iure facilis dicta pariatur.
+30,analista3,23004462582,2024-01-13,CASO-00030,Officiis id reprehenderit molestias repellendus exercitationem temporibus.,Finalizado,Alta,Ingeniería Social,App Móvil,380189,Sapiente sed unde in.
+31,analista1,94488041321,2024-01-17,CASO-00031,Est excepturi eaque laborum illo velit.,Finalizado,Baja,Acceso Ilegítimo,Correo Electrónico,119139,Recusandae cumque odit.
+32,analista1,35970421994,2024-01-28,CASO-00032,Dignissimos porro omnis.,Finalizado,Media,Dispositivo Nuevo,Banca Web,374459,Eos ab natus ullam.
+33,analista1,57957668257,2024-01-04,CASO-00033,Ad maxime perspiciatis debitis.,En revisión,Alta,Transaccional,Banca Web,76382,Iste maxime ut iusto et.
+34,analista3,22709696268,2024-01-03,CASO-00034,Iusto nostrum incidunt molestiae tempora dolores.,Finalizado,Alta,Dispositivo Nuevo,App Móvil,499897,Ad vitae labore fugit.
+35,analista3,06646304070,2024-01-10,CASO-00035,Architecto corporis voluptate ducimus perspiciatis aliquid.,Pendiente,Baja,Transaccional,Web Corporativa,449194,Ea possimus delectus illum.
+36,analista3,03001680728,2024-01-21,CASO-00036,Modi consequatur facilis sit tempora eos.,En revisión,Media,Transaccional,Web Corporativa,356776,Accusantium et ullam.
+37,analista1,94603475482,2024-01-15,CASO-00037,Iusto molestiae exercitationem.,En revisión,Baja,Acceso Ilegítimo,Correo Electrónico,387971,Quas quibusdam eum totam.
+38,analista2,82811492223,2024-01-14,CASO-00038,Quas excepturi praesentium quasi deserunt.,Finalizado,Media,Ingeniería Social,Correo Electrónico,251559,Optio autem eveniet earum.
+39,analista2,30039858284,2024-01-05,CASO-00039,Natus impedit laudantium.,En revisión,Alta,Transaccional,Banca Web,144492,Accusantium inventore cumque.
+40,analista1,88079352223,2024-01-15,CASO-00040,Architecto excepturi dignissimos mollitia.,Finalizado,Baja,Ingeniería Social,Web Corporativa,404391,Magni perferendis eum sunt.
+41,analista1,54322357484,2024-01-22,CASO-00041,Asperiores eveniet nisi amet.,Pendiente,Baja,Ingeniería Social,App Móvil,220888,Quaerat fuga dolore totam.
+42,analista2,30394724565,2024-01-15,CASO-00042,Officia doloremque eos.,En revisión,Baja,Transaccional,Web Corporativa,493179,Quo in deserunt.
+43,analista1,47831848191,2024-01-26,CASO-00043,Laboriosam corporis veritatis.,Pendiente,Alta,Ingeniería Social,Correo Electrónico,216376,Qui quidem voluptatibus.
+44,analista3,70527356810,2024-01-11,CASO-00044,Similique molestias temporibus amet unde aperiam.,Finalizado,Media,Ingeniería Social,Correo Electrónico,259857,Ullam nesciunt ut hic.
+45,analista3,82538758091,2024-01-16,CASO-00045,Voluptas sit corporis earum porro cumque.,En revisión,Alta,Dispositivo Nuevo,Banca Web,366565,Voluptatibus soluta optio.
+46,analista2,39345909897,2024-01-21,CASO-00046,Maxime dolor iste impedit assumenda.,En revisión,Alta,Acceso Ilegítimo,App Móvil,395136,Iste ut ut ipsum.
+47,analista1,05677892093,2024-01-03,CASO-00047,Rerum voluptatem eaque delectus laborum.,Pendiente,Baja,Dispositivo Nuevo,Web Corporativa,212913,Dolorem eos cum veniam.
+48,analista1,87447910455,2024-01-23,CASO-00048,Laudantium sit provident harum.,Pendiente,Baja,Transaccional,Correo Electrónico,353868,Eligendi expedita deleniti.
+49,analista2,79448169755,2024-01-24,CASO-00049,Quaerat sint expedita nobis sed sequi.,En revisión,Baja,Transaccional,App Móvil,362409,Eius nostrum fugit alias.
+50,analista1,62273315887,2024-01-25,CASO-00050,Deleniti aperiam dolores.,Finalizado,Baja,Dispositivo Nuevo,Banca Web,70883,Qui ratione nostrum eum.
+51,analista3,09305363425,2024-02-26,CASO-00051,Libero autem minima nam quae sequi.,En revisión,Baja,Transaccional,Web Corporativa,170341,Officia explicabo sint.
+52,analista3,41885072817,2024-02-20,CASO-00052,Praesentium corrupti culpa alias.,En revisión,Baja,Transaccional,Web Corporativa,172187,Architecto magnam sit eos.
+53,analista1,70071693859,2024-02-17,CASO-00053,Explicabo dolorem ducimus molestias.,Finalizado,Baja,Ingeniería Social,Banca Web,243893,Numquam voluptate fugit.
+54,analista3,13722620146,2024-02-07,CASO-00054,Adipisci mollitia dolores.,Finalizado,Media,Dispositivo Nuevo,Banca Web,416571,Illo itaque commodi.
+55,analista3,04871675961,2024-02-27,CASO-00055,Blanditiis nam fugit veritatis.,Finalizado,Baja,Dispositivo Nuevo,Correo Electrónico,468895,Dolorum ut expedita quasi.
+56,analista1,22126489712,2024-02-03,CASO-00056,Optio minus eaque.,Pendiente,Media,Acceso Ilegítimo,Web Corporativa,317856,Adipisci debitis ut ipsam.
+57,analista3,18986603968,2024-02-24,CASO-00057,Veniam minima quos unde ad aliquam.,Finalizado,Media,Transaccional,Web Corporativa,243144,Eum sequi est quos.
+58,analista1,33451027059,2024-02-07,CASO-00058,Accusantium quibusdam qui nisi.,En revisión,Media,Dispositivo Nuevo,Web Corporativa,224799,Repudiandae porro ad.
+59,analista1,55631999774,2024-02-26,CASO-00059,Earum eius accusantium voluptatibus.,Pendiente,Media,Dispositivo Nuevo,App Móvil,212430,Praesentium animi distinctio.
+60,analista1,91659695708,2024-02-18,CASO-00060,Deleniti tempore magnam iusto maxime hic.,En revisión,Media,Ingeniería Social,Banca Web,50466,Distinctio amet quod labore.
+61,analista1,33499888995,2024-02-19,CASO-00061,Laboriosam numquam beatae autem.,Finalizado,Alta,Ingeniería Social,Correo Electrónico,183437,Ab ullam minus consequatur.
+62,analista3,78859482860,2024-02-24,CASO-00062,Possimus temporibus et dignissimos culpa delectus.,En revisión,Media,Ingeniería Social,Web Corporativa,185477,At dolorum deleniti.
+63,analista3,83990430265,2024-02-12,CASO-00063,Culpa aliquam amet est.,Finalizado,Media,Ingeniería Social,Correo Electrónico,460125,Vero saepe sit.
+64,analista3,09859998077,2024-02-05,CASO-00064,Ratione explicabo at accusantium.,En revisión,Alta,Transaccional,Web Corporativa,343946,Quas harum eum ex ipsam odio.
+65,analista1,89680954985,2024-02-12,CASO-00065,Totam inventore provident provident soluta illo.,Pendiente,Alta,Transaccional,Banca Web,227184,Harum vero veniam.
+66,analista1,99782199685,2024-02-16,CASO-00066,Libero iusto minus.,Finalizado,Alta,Acceso Ilegítimo,App Móvil,53645,Deleniti iure sequi eius et.
+67,analista2,95246346063,2024-02-04,CASO-00067,Qui dicta voluptatum cum reprehenderit beatae.,Pendiente,Baja,Ingeniería Social,Web Corporativa,394843,Quos voluptatem id numquam.
+68,analista1,21857547744,2024-02-16,CASO-00068,Dicta nulla vel.,En revisión,Baja,Ingeniería Social,App Móvil,110968,Et tenetur commodi.
+69,analista2,29616300245,2024-02-26,CASO-00069,Commodi soluta animi ratione.,Pendiente,Media,Dispositivo Nuevo,App Móvil,273027,Velit minima illum dolorem.
+70,analista3,20067767844,2024-02-11,CASO-00070,Nisi repellat architecto adipisci consequuntur non.,En revisión,Media,Dispositivo Nuevo,Web Corporativa,372717,Dolores modi totam corrupti.
+71,analista2,93759695700,2024-02-24,CASO-00071,Repudiandae aliquid dicta.,Finalizado,Alta,Acceso Ilegítimo,Banca Web,134083,Ea a sit quas corrupti.
+72,analista2,13301911273,2024-02-28,CASO-00072,Rerum fugit possimus.,En revisión,Media,Acceso Ilegítimo,Web Corporativa,223855,Blanditiis vitae ea.
+73,analista2,20851492398,2024-02-26,CASO-00073,Ipsa placeat facilis dolor quibusdam.,Finalizado,Media,Dispositivo Nuevo,Correo Electrónico,307788,Facilis et animi sunt.
+74,analista3,30426810855,2024-02-20,CASO-00074,Debitis provident libero quisquam incidunt.,Finalizado,Alta,Transaccional,Web Corporativa,368624,Sunt enim iusto magnam.
+75,analista2,24280396378,2024-02-05,CASO-00075,Similique est id voluptate ducimus esse.,Finalizado,Baja,Acceso Ilegítimo,Web Corporativa,461517,Reiciendis rerum dolor ipsam.
+76,analista3,69316439959,2024-03-14,CASO-00076,Soluta beatae perspiciatis magni.,Pendiente,Alta,Transaccional,App Móvil,86361,Fugit ullam explicabo quos.
+77,analista3,33079155247,2024-03-17,CASO-00077,Vero voluptas molestiae.,Pendiente,Media,Acceso Ilegítimo,App Móvil,74471,Eius ipsam ullam omnis non.
+78,analista1,29107834583,2024-03-07,CASO-00078,Ipsa quibusdam nemo.,Finalizado,Media,Transaccional,Web Corporativa,372436,Error dicta illo.
+79,analista3,99200134671,2024-03-13,CASO-00079,Assumenda minus eligendi libero magni voluptas.,Pendiente,Media,Dispositivo Nuevo,Web Corporativa,288989,Quis earum pariatur sunt.
+80,analista2,35561171661,2024-03-24,CASO-00080,Praesentium totam odit culpa facere.,Finalizado,Media,Transaccional,Web Corporativa,323042,Ducimus facere et.
+81,analista2,09288838482,2024-03-20,CASO-00081,Et laboriosam praesentium impedit laboriosam.,En revisión,Media,Dispositivo Nuevo,App Móvil,159570,Quas repudiandae omnis nisi.
+82,analista3,23850278068,2024-03-25,CASO-00082,Eligendi a illum nostrum.,En revisión,Media,Acceso Ilegítimo,App Móvil,298839,Ad non ratione soluta.
+83,analista2,38327064419,2024-03-09,CASO-00083,Odit necessitatibus rem ipsum.,Pendiente,Media,Ingeniería Social,Correo Electrónico,142032,Error officiis earum.
+84,analista3,15067277304,2024-03-27,CASO-00084,Maxime ipsum consectetur.,Pendiente,Media,Acceso Ilegítimo,App Móvil,496881,Earum libero ullam labore et.
+85,analista1,35562979515,2024-03-22,CASO-00085,Dignissimos cupiditate similique enim.,Pendiente,Alta,Ingeniería Social,Web Corporativa,184250,Ea debitis facilis.
+86,analista2,72257625721,2024-03-05,CASO-00086,Commodi maxime porro enim ipsa.,Finalizado,Media,Dispositivo Nuevo,Correo Electrónico,303324,Totam culpa amet quia.
+87,analista3,74554563987,2024-03-11,CASO-00087,Tempore eius voluptas quasi similique maxime.,Pendiente,Media,Ingeniería Social,App Móvil,169374,Quasi molestias illum.
+88,analista2,01154012749,2024-03-24,CASO-00088,Autem ipsa magnam.,Finalizado,Baja,Ingeniería Social,App Móvil,194659,In dolorem unde minima.
+89,analista2,17131793830,2024-03-26,CASO-00089,Tempora minus perferendis voluptates.,Finalizado,Media,Ingeniería Social,Correo Electrónico,227818,Saepe fuga atque facilis.
+90,analista3,30872633910,2024-03-12,CASO-00090,Debitis occaecati voluptatem asperiores voluptatem.,Finalizado,Alta,Transaccional,App Móvil,153714,Repudiandae eaque eius at.
+91,analista2,20140017079,2024-03-18,CASO-00091,Sint recusandae corrupti cum aperiam.,Finalizado,Alta,Acceso Ilegítimo,Correo Electrónico,209952,Nulla illo atque.
+92,analista3,80358767705,2024-03-16,CASO-00092,Ducimus amet dolorem voluptatibus necessitatibus.,En revisión,Alta,Dispositivo Nuevo,Web Corporativa,163291,At aut commodi.
+93,analista1,41439425502,2024-03-14,CASO-00093,Provident iure culpa veniam illo odit.,Pendiente,Media,Ingeniería Social,Web Corporativa,444914,Omnis nam labore.
+94,analista1,05397001549,2024-03-04,CASO-00094,Ipsa mollitia alias esse hic.,Finalizado,Alta,Dispositivo Nuevo,Web Corporativa,401504,Sunt sunt veniam voluptate.
+95,analista3,85611032549,2024-03-07,CASO-00095,Recusandae quam laudantium.,En revisión,Media,Ingeniería Social,Banca Web,302594,Vero quas in saepe.
+96,analista2,34891075369,2024-03-23,CASO-00096,Quo minus inventore incidunt corporis.,Pendiente,Baja,Dispositivo Nuevo,Banca Web,342360,Hic dolorum nihil et saepe.
+97,analista2,68406624273,2024-03-26,CASO-00097,Assumenda impedit magnam quasi.,En revisión,Baja,Acceso Ilegítimo,Correo Electrónico,490307,Illo debitis non rerum dolor.
+98,analista1,16095541805,2024-03-18,CASO-00098,Fugiat ab similique vero.,Pendiente,Media,Dispositivo Nuevo,App Móvil,285907,Accusamus aliquid debitis.
+99,analista3,62053070450,2024-03-14,CASO-00099,Recusandae id voluptates sapiente.,Pendiente,Alta,Ingeniería Social,Web Corporativa,236954,Ipsa illo quasi non.
+100,analista1,72026174801,2024-03-07,CASO-00100,Dignissimos magnam architecto voluptate aperiam.,Finalizado,Baja,Transaccional,Correo Electrónico,438167,Voluptas a tempora harum.
+101,analista3,17362203227,2024-04-19,CASO-00101,Aut porro dolores cupiditate veritatis omnis.,Finalizado,Baja,Acceso Ilegítimo,Correo Electrónico,79736,Eaque fuga delectus.
+102,analista3,83793052996,2024-04-02,CASO-00102,Ad rem itaque.,Pendiente,Alta,Transaccional,Banca Web,360712,Minus quos sint voluptates.
+103,analista1,50421841433,2024-04-10,CASO-00103,Ipsa dolores eius.,Finalizado,Baja,Ingeniería Social,Web Corporativa,135482,Iure aliquam cupiditate nemo.
+104,analista2,11878791144,2024-04-25,CASO-00104,Animi a quod quidem dicta inventore.,En revisión,Alta,Transaccional,Correo Electrónico,68743,Beatae corporis libero.
+105,analista1,18497924527,2024-04-18,CASO-00105,Laboriosam velit aperiam deleniti.,Finalizado,Alta,Transaccional,Banca Web,170651,Vitae earum deserunt.
+106,analista2,03245331187,2024-04-19,CASO-00106,Ab nam veniam ab.,Pendiente,Media,Acceso Ilegítimo,Banca Web,469368,Sit occaecati odio illum a.
+107,analista1,68986073899,2024-04-12,CASO-00107,Molestias porro hic quis repellendus.,En revisión,Media,Transaccional,Correo Electrónico,390614,Suscipit inventore nobis.
+108,analista1,77319799906,2024-04-03,CASO-00108,Aspernatur adipisci similique.,Finalizado,Media,Acceso Ilegítimo,App Móvil,323145,Ea eligendi aliquid nostrum.
+109,analista1,51828611583,2024-04-10,CASO-00109,A nostrum placeat consequatur.,Finalizado,Alta,Transaccional,Banca Web,410032,Ea officiis unde.
+110,analista2,90415884464,2024-04-05,CASO-00110,Magni perferendis laborum delectus alias.,En revisión,Alta,Acceso Ilegítimo,Web Corporativa,125408,Molestias porro repellendus.
+111,analista3,47207439894,2024-04-26,CASO-00111,Odit sapiente magni quaerat aperiam adipisci.,En revisión,Alta,Transaccional,Web Corporativa,335047,Velit blanditiis deserunt.
+112,analista3,72373285561,2024-04-25,CASO-00112,Quibusdam voluptate aperiam.,Finalizado,Alta,Transaccional,App Móvil,384130,Vitae cum repudiandae.
+113,analista3,72512780867,2024-04-16,CASO-00113,Laudantium eum quasi animi tenetur.,Finalizado,Media,Ingeniería Social,Banca Web,364111,Non natus impedit molestias.
+114,analista3,63475862395,2024-04-21,CASO-00114,Praesentium animi incidunt culpa fugit corporis.,En revisión,Alta,Acceso Ilegítimo,Web Corporativa,304720,Architecto perferendis quasi.
+115,analista3,29327075410,2024-04-22,CASO-00115,Dolore temporibus dolorum architecto blanditiis repudiandae.,En revisión,Media,Ingeniería Social,Banca Web,387365,Perspiciatis quo tempora.
+116,analista1,45608470732,2024-04-08,CASO-00116,Consectetur magni atque nulla.,Finalizado,Alta,Transaccional,App Móvil,294058,Molestias vero quas ipsum.
+117,analista1,92485218105,2024-04-05,CASO-00117,Id repellat non voluptatem.,Pendiente,Media,Transaccional,App Móvil,109664,Corporis dolorem a corrupti.
+118,analista1,67271173246,2024-04-06,CASO-00118,Iusto distinctio perferendis minima.,Pendiente,Media,Dispositivo Nuevo,Banca Web,159842,Eaque repellat possimus.
+119,analista3,86772658268,2024-04-11,CASO-00119,Exercitationem expedita praesentium saepe natus.,En revisión,Media,Transaccional,Correo Electrónico,200665,Rem voluptas voluptatem.
+120,analista2,89922950754,2024-04-09,CASO-00120,Illo expedita voluptate.,Finalizado,Baja,Acceso Ilegítimo,Web Corporativa,159712,Nulla minus error omnis.
+121,analista1,68407184619,2024-04-07,CASO-00121,Itaque aspernatur laudantium consequuntur.,En revisión,Media,Dispositivo Nuevo,Web Corporativa,126337,Iusto dolor impedit cum.
+122,analista1,72486781079,2024-04-16,CASO-00122,Odit officia eaque.,En revisión,Media,Ingeniería Social,Correo Electrónico,390275,Placeat nisi natus.
+123,analista3,15984324968,2024-04-10,CASO-00123,Minus excepturi quaerat neque fugit.,Pendiente,Alta,Acceso Ilegítimo,Correo Electrónico,209471,Cum quis optio officia.
+124,analista3,54716969541,2024-04-01,CASO-00124,Nostrum commodi placeat sapiente itaque ex.,Pendiente,Alta,Transaccional,Web Corporativa,320575,Vel illo quod esse debitis.
+125,analista3,20553271854,2024-04-06,CASO-00125,Temporibus autem nam nobis voluptate incidunt.,En revisión,Media,Dispositivo Nuevo,App Móvil,349371,Et veniam vitae iste id.
+126,analista3,51052879357,2024-05-06,CASO-00126,Qui saepe id.,Finalizado,Baja,Dispositivo Nuevo,App Móvil,213978,Illo error nam in.
+127,analista2,36018024221,2024-05-24,CASO-00127,Ipsam expedita placeat placeat.,En revisión,Baja,Acceso Ilegítimo,Correo Electrónico,259025,Hic quisquam tempora rem.
+128,analista2,51107146064,2024-05-10,CASO-00128,Necessitatibus quia voluptas iste illum.,Pendiente,Alta,Acceso Ilegítimo,Web Corporativa,435178,Officia iusto deleniti nam.
+129,analista1,47511381308,2024-05-15,CASO-00129,Incidunt quos temporibus aspernatur fugiat asperiores.,En revisión,Alta,Acceso Ilegítimo,Web Corporativa,284423,In ullam nam.
+130,analista1,67295478633,2024-05-24,CASO-00130,Esse esse ratione fugiat porro at.,Finalizado,Media,Dispositivo Nuevo,App Móvil,388419,Molestias ut odit veniam.
+131,analista1,10183420915,2024-05-24,CASO-00131,Velit pariatur maiores quos quasi sed.,Pendiente,Alta,Acceso Ilegítimo,Banca Web,68203,Est ratione libero sunt.
+132,analista1,47438262535,2024-05-10,CASO-00132,Aliquid aperiam vitae voluptatem.,Finalizado,Baja,Dispositivo Nuevo,Correo Electrónico,199969,Architecto nulla non nemo.
+133,analista3,73274626407,2024-05-24,CASO-00133,Itaque illo unde.,Pendiente,Alta,Ingeniería Social,Correo Electrónico,102130,Pariatur aliquam quos a.
+134,analista1,52880758365,2024-05-16,CASO-00134,Molestias suscipit assumenda est.,Pendiente,Media,Acceso Ilegítimo,App Móvil,440102,Natus in rem officia.
+135,analista2,04223628681,2024-05-15,CASO-00135,Similique sapiente eaque voluptatem.,En revisión,Media,Acceso Ilegítimo,Banca Web,364075,Modi animi id.
+136,analista3,40780796832,2024-05-25,CASO-00136,Impedit natus nobis nobis.,Pendiente,Alta,Dispositivo Nuevo,Web Corporativa,417741,Vero minus ex veritatis.
+137,analista3,14871455604,2024-05-10,CASO-00137,Porro sequi hic.,Finalizado,Baja,Transaccional,Banca Web,151565,Iure unde aut fuga.
+138,analista1,42939073159,2024-05-22,CASO-00138,Atque fugit beatae dolor voluptatum.,Pendiente,Media,Transaccional,Correo Electrónico,100727,Sequi fuga repellendus.
+139,analista1,64489251567,2024-05-26,CASO-00139,Beatae minus sapiente veniam laboriosam.,En revisión,Baja,Dispositivo Nuevo,App Móvil,404153,Rerum ad corrupti veniam.
+140,analista2,36456980091,2024-05-23,CASO-00140,Sapiente omnis exercitationem.,En revisión,Baja,Ingeniería Social,Banca Web,406523,Quis maxime quos fugit.
+141,analista1,16842780307,2024-05-12,CASO-00141,Deleniti facere vitae reprehenderit saepe.,En revisión,Alta,Acceso Ilegítimo,Web Corporativa,407999,Qui a quisquam nobis dolorum.
+142,analista3,18119497206,2024-05-26,CASO-00142,Atque voluptates quam.,En revisión,Media,Transaccional,Banca Web,369318,Aut fuga soluta.
+143,analista2,31918481926,2024-05-08,CASO-00143,Aperiam quisquam sit.,En revisión,Media,Dispositivo Nuevo,Banca Web,76221,Animi quod consequatur eius.
+144,analista3,48153082458,2024-05-23,CASO-00144,Dolores sed omnis illo exercitationem.,Finalizado,Media,Acceso Ilegítimo,Web Corporativa,455889,Dicta modi rerum distinctio.
+145,analista2,69987675919,2024-05-04,CASO-00145,Et libero maiores inventore atque quae.,Pendiente,Baja,Acceso Ilegítimo,Banca Web,246553,Explicabo ea rerum.
+146,analista3,83965924987,2024-05-02,CASO-00146,Labore eligendi impedit in.,En revisión,Baja,Acceso Ilegítimo,Web Corporativa,401013,Amet maiores aut a.
+147,analista1,97076955301,2024-05-08,CASO-00147,Odio ex fugit.,Pendiente,Alta,Acceso Ilegítimo,App Móvil,157666,Numquam magni amet.
+148,analista1,84130713271,2024-05-12,CASO-00148,Soluta optio veniam.,En revisión,Media,Dispositivo Nuevo,Correo Electrónico,261237,Modi itaque recusandae.
+149,analista1,73121441040,2024-05-25,CASO-00149,Aspernatur blanditiis dignissimos harum modi.,Finalizado,Alta,Dispositivo Nuevo,Web Corporativa,148612,Nemo eos dolore quasi.
+150,analista3,09839086956,2024-05-21,CASO-00150,Aliquid incidunt illum animi molestiae quasi.,Finalizado,Media,Ingeniería Social,Web Corporativa,321006,Saepe nihil cumque minima.

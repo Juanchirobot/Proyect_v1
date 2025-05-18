@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Riesgo Operativo</title>
+  <link rel="stylesheet" href="style_mriesgo.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="sidebar" onmouseover="expandSidebar()" onmouseleave="collapseSidebar()">
+    <div class="sidebar-logo">
+      <span class="icono-principal">📊</span>
+      <span class="titulo-principal">Riesgo Operativo</span>
+    </div>
+
+    <div class="sidebar-item" onclick="toggleSubmenu('submenuEvaluaciones')">
+      📋<span class="texto-menu"> Evaluaciones</span>
+    </div>
+    <div id="submenuEvaluaciones" class="submenu">
+      <div onclick="abrirSubmenuEvaluaciones()">Ver Tabla</div>
+      <div onclick="abrirFormularioSubmodulo()">Nuevo Registro</div>
+    </div>
+
+    <div class="sidebar-item" onclick="toggleSubmenu('submenuIndicadores')">
+      📈<span class="texto-menu"> Indicadores</span>
+    </div>
+    <div id="submenuIndicadores" class="submenu">
+      <div onclick="abrirSubmenuIndicadores()">Ver Tabla</div>
+      <div onclick="abrirFormularioSubmodulo()">Nuevo Registro</div>
+    </div>
+
+    <div class="sidebar-item" onclick="mostrarDashboard()">
+      📊<span class="texto-menu"> Dashboard</span>
+    </div>
+  </div>
+  <div class="main-content">
+     <div class="main-content">
+    <div class="seccion centrada">
+      <h1 class="titulo-seccion">📊 Riesgo Operativo</h1>
+
+      <!-- BUSCADOR EVALUACIONES -->
+      <div id="busqueda-evaluaciones" class="busqueda" style="display: none;">
+        <input type="text" id="busquedaEvaluaciones" placeholder="Buscar por área, tema o riesgo..." />
+        <button onclick="ejecutarBusqueda()">🔍 Buscar</button>
+        <button onclick="descargarCSVEvaluaciones()">⬇️ Descargar CSV</button>
+      </div>
+
+      <!-- BUSCADOR INDICADORES -->
+      <div id="busqueda-indicadores" class="busqueda" style="display: none;">
+        <input type="text" id="busquedaIndicadores" placeholder="Buscar por sector o responsable..." />
+        <button onclick="buscarIndicadores()">🔍 Buscar</button>
+        <button onclick="descargarCSVIndicadores()">⬇️ Descargar CSV</button>
+      </div>
+
+      <!-- TABLA DE EVALUACIONES -->
+      <div id="contenedorEvaluaciones" class="tabla-contenedor">
+        <table id="tablaEvaluaciones">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Fecha</th>
+              <th>Área</th>
+              <th>Tema</th>
+              <th>Riesgo</th>
+              <th>Recomendación</th>
+              <th>Archivo</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <!-- FORMULARIO DE EVALUACIONES -->
+      <div id="formEvaluaciones" class="formulario centrado" style="display: none;">
+        <h2>Formulario de Evaluaciones</h2>
+        <form id="evaluacionForm">
+          <label for="fecha">Fecha:</label>
+          <input type="date" id="fecha" required />
+
+          <label for="area">Área Evaluada:</label>
+          <input type="text" id="area" required />
+
+          <label for="tema">Tema:</label>
+          <input type="text" id="tema" required />
+
+          <label for="riesgo">Riesgo:</label>
+          <input type="text" id="riesgo" required />
+
+          <label for="recomendacion">Recomendación:</label>
+          <input type="text" id="recomendacion" required />
+
+          <label for="archivo">Archivo:</label>
+          <input type="text" id="archivo" />
+        </form>
+        <button type="submit" form="evaluacionForm">Guardar</button>
+      </div>
+
+      <!-- TABLA DE INDICADORES -->
+      <div id="contenedorIndicadores" class="tabla-contenedor" style="display: none;">
+        <table id="tablaIndicadores">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Sector</th>
+              <th>%</th>
+              <th>Fecha</th>
+              <th>Responsable</th>
+              <th>Observaciones</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <!-- FORMULARIO DE INDICADORES -->
+      <div id="formIndicadores" class="formulario centrado" style="display: none;">
+        <h2>Formulario de Indicadores</h2>
+        <form id="indicadorForm">
+          <input type="hidden" id="indicadorID" />
+
+          <label for="sector">Sector:</label>
+          <input type="text" id="sector" required />
+
+          <label for="indicadorPorcentaje">Valor Indicador (%):</label>
+          <input type="number" id="indicadorPorcentaje" min="0" max="100" required />
+
+          <label for="fecha">Fecha:</label>
+          <input type="date" id="fecha" required />
+
+          <label for="responsable">Responsable:</label>
+          <input type="text" id="responsable" required />
+
+          <label for="observaciones">Observaciones:</label>
+          <textarea id="observaciones"></textarea>
+        </form>
+        <button type="button" onclick="guardarIndicador()">Guardar</button>
+      </div>
+      <!-- DASHBOARD -->
+      <div id="dashboard" class="dashboard centrado" style="display: none;">
+        <h2>Dashboard</h2>
+        <div class="dashboard-filtros">
+          <select id="filtroCategoria" onchange="filtrarPorCategoria()">
+            <option value="">Seleccionar módulo</option>
+            <option value="evaluaciones">Evaluaciones</option>
+            <option value="indicadores">Indicadores</option>
+          </select>
+
+          <select id="filtroAnio" onchange="filtrarPorAnio()" disabled>
+            <option value="">Año</option>
+          </select>
+
+          <select id="filtroMes" onchange="filtrarPorMes()" disabled>
+            <option value="">Mes</option>
+          </select>
+        </div>
+
+        <div class="dashboard-graficos">
+          <canvas id="graficoEvolucionEvaluaciones"></canvas>
+          <canvas id="graficoRiesgos"></canvas>
+          <canvas id="graficoAreas"></canvas>
+        </div>
+      </div>
+    </div> <!-- Cierra .seccion -->
+
+  </div> <!-- Cierra .main-content -->
+
+  <script defer src="script_mriesgo.js"></script>
+</body>
+</html>

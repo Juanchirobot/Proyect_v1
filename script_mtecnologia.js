@@ -14,7 +14,7 @@ async function cargarDatos() {
 }
 
 async function cargarIncidentes() {
-  const url = 'https://raw.githubusercontent.com/Juanchirobot/fraudes-riesgos/tecnologia/incidentes_tecnologicos.csv';
+  const url = 'https://raw.githubusercontent.com/Juanchirobot/fraudes-riesgos/incidentes_tecnologicos.csv';
   const res = await fetch(url);
   const text = await res.text();
   const filas = text.trim().split('\n').slice(1);
@@ -26,7 +26,7 @@ async function cargarIncidentes() {
 }
 
 async function cargarDependencias() {
-  const url = 'https://raw.githubusercontent.com/Juanchirobot/fraudes-riesgos/tecnologia/arbol_dependencias.csv';
+  const url = 'https://raw.githubusercontent.com/Juanchirobot/fraudes-riesgos/arbol_dependencias.csv';
   const res = await fetch(url);
   const text = await res.text();
   const filas = text.trim().split('\n').slice(1);
